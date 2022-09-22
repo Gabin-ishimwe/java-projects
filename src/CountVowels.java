@@ -9,7 +9,21 @@ public class CountVowels {
     public static void main(String[] args) {
         System.out.println("Counter Vowels App");
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your word of choice? ");
         String word = scanner.nextLine();
+        int vowelNum = 0;
+        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+
+        for (int i = 0;  i < word.length(); i ++) {
+            for (int j = 0; j < vowels.length; j++) {
+                if (word.charAt(i) == vowels[j]) {
+                    vowelNum += 1;
+                }
+            }
+        }
+
+        System.out.println("Number of vowels found is " + vowelNum);
+
 
     }
 }
