@@ -15,8 +15,8 @@ public class CountVowels {
         char[] vowels = {'a', 'e', 'i', 'o', 'u'};
 
         for (int i = 0;  i < word.length(); i ++) {
-            for (int j = 0; j < vowels.length; j++) {
-                if (word.charAt(i) == vowels[j]) {
+            for (char vowel:vowels) {
+                if (word.charAt(i) == vowel) {
                     vowelNum += 1;
                 }
             }
